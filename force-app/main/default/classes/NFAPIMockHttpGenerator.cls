@@ -1,9 +1,8 @@
 @isTest
 global class NFAPIMockHttpGenerator implements HttpCalloutMock {
-    // Implement this interface method
+   
     global HTTPResponse respond(HTTPRequest req) {
-        // Optionally, only send a mock response for a specific endpoint
-        // and method.
+        
         System.assertEquals('https://nfapihub.herokuapp.com/', req.getEndpoint());
         System.assertEquals('POST', req.getMethod());
         

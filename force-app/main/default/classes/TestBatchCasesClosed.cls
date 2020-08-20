@@ -10,8 +10,7 @@ public class TestBatchCasesClosed {
         BatchCasesClosed schBatch = new BatchCasesClosed(); 
 		Id batchId = Database.executeBatch(schBatch, 50);
         Test.stopTest();
-        // after the testing stops, assert records were updated properly
-        //System.assertEquals(10, [select count() from contact where MailingCity = 'New York']);
+        
     }
     
 }
